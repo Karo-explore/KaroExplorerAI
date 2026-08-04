@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KaroExplorerAI</title>
+<title>KaroExplorerAI v0.3</title>
 
 <style>
 *{
@@ -93,59 +93,39 @@ color:#666;
 <p>Explore hidden patterns inside the digits of π</p>
 
 <div class="search-box">
-<input id="word" placeholder="Enter a word...">
+<input id="word" placeholder="Enter digits...">
 <button onclick="search()">Search</button>
 </div>
 
 <div id="result"></div>
 
 <div class="footer">
-Powered by KaroExplorerAI • Version 2
+Powered by KaroExplorerAI • Version 0.3
 </div>
 
 </div>
 
 <script>
-
 function search(){
 
 let word=document.getElementById("word").value.trim();
 
 if(word==""){
-document.getElementById("result").innerHTML="Please enter a word.";
+document.getElementById("result").innerHTML="Please enter digits.";
 return;
 }
 
-const pi =
-"31415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679";
+const pi="31415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679";
 
 if(pi.includes(word)){
-    let position = pi.indexOf(word);
+let position=pi.indexOf(word);
 
-    document.getElementById("result").innerHTML =
-    "✅ Found!<br><br>Position: " + position;
+document.getElementById("result").innerHTML=
+"✅ Found!<br><br>Position: "+position;
 }
 else{
-    else{
-    else{
-    document.getElementById("result").innerHTML =
-    "❌ Not Found";
-}
-
-}
-</script>
-
-</body>
-</html>
-if(pi.includes(word)){
-    let position = pi.indexOf(word);
-
-    document.getElementById("result").innerHTML =
-    "✅ Found!<br><br>Position: " + position;
-}
-else{
-    document.getElementById("result").innerHTML =
-    "❌ Not Found";
+document.getElementById("result").innerHTML=
+"❌ Not Found";
 }
 
 }
