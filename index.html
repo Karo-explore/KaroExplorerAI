@@ -116,12 +116,16 @@ document.getElementById("result").innerHTML="Please enter a word.";
 return;
 }
 
-document.getElementById("result").innerHTML=
-"Searching for: <b>"+word+"</b><br><br>⚡ AI search engine is coming soon...";
+const pi =
+"31415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679";
 
+if(pi.includes(word)){
+    let position = pi.indexOf(word);
+
+    document.getElementById("result").innerHTML =
+    "✅ Found!<br><br>Position: " + position;
 }
-
-</script>
-
-</body>
-</html>
+else{
+    document.getElementById("result").innerHTML =
+    "❌ Not Found";
+}
