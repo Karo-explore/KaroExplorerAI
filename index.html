@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KaroExplorerAI</title>
+
+<style>
+
+body{
+margin:0;
+padding:0;
+background:#050816;
+font-family:Arial,sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+color:white;
+overflow:hidden;
+}
+
+.container{
+text-align:center;
+}
+
+h1{
+font-size:55px;
+margin-bottom:10px;
+}
+
+p{
+color:#bdbdbd;
+font-size:20px;
+margin-bottom:35px;
+}
+
+input{
+width:320px;
+padding:15px;
+font-size:18px;
+border:none;
+border-radius:10px;
+outline:none;
+}
+
+button{
+padding:15px 30px;
+font-size:18px;
+border:none;
+border-radius:10px;
+margin-left:10px;
+cursor:pointer;
+background:#00c3ff;
+color:white;
+}
+
+.pi{
+position:absolute;
+font-size:24px;
+opacity:.08;
+animation:move 18s linear infinite;
+white-space:nowrap;
+}
+
+@keyframes move{
+0%{transform:translateY(100vh);}
+100%{transform:translateY(-120vh);}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="pi">
+π 3.14159265358979323846264338327950288419716939937510
+</div>
+
+<div class="container">
+
+<h1>KaroExplorerAI</h1>
+
+<p>Explore hidden patterns inside the digits of Pi.</p>
+
+<input placeholder="Enter a word...">
+
+<button>Search</button>
+
+</div>
+
+</body>
+</html>
