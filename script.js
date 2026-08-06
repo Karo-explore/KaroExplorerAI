@@ -11,6 +11,14 @@ const button = document.getElementById("searchButton");
 
 button.addEventListener("click", search);
 
+document.getElementById("word").addEventListener("keydown", function(event){
+
+    if(event.key === "Enter"){
+        search();
+    }
+
+});
+
 function search(){
 
     const word = document.getElementById("word").value.trim();
