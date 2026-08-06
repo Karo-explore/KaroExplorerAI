@@ -21,8 +21,13 @@ body{
 }
 
 h1{
-    font-size:48px;
-    margin-bottom:10px;
+    font-size: 56px;
+    margin-bottom: 12px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    text-shadow:
+        0 0 10px rgba(14,165,233,.35),
+        0 0 25px rgba(14,165,233,.15);
 }
 
 p{
