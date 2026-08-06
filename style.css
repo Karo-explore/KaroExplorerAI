@@ -10,7 +10,8 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    background:red !important;
+    background:
+    radial-gradient(circle at top,#1e3a8a 0%,#0b1228 35%,#050816 100%);
     color:white;
     padding:20px;
 }
