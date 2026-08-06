@@ -6,12 +6,12 @@
 }
 
 body{
-    background:#060b1b;
-    color:white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
+    background: linear-gradient(135deg, #050816 0%, #0b1228 50%, #111827 100%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container{
