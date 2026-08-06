@@ -4,7 +4,7 @@ fetch("pi.txt")
 .then(response => response.text())
 .then(data => {
     pi = data.trim();
-    console.log("π loaded successfully.");
+    console.log("Version 0.6 Loaded!");
 });
 
 const button = document.getElementById("searchButton");
@@ -41,7 +41,7 @@ function search(){
 
     if(position !== -1){
         result.innerHTML =
-        "✅ Found!<br><br>" +
+        "🚀 Found!<br><br>" +
         "Position: " + position +
         "<br><br>Search time: " + searchTime + " ms";
     }else{
