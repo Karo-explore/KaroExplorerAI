@@ -1,0 +1,1 @@
+console.log("KaroExplorerAI v0.4");
